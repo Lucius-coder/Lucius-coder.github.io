@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="css/index.css" title="" type="text/css" />-->
+  <script src="all.js" type="text/javascript" charset="utf-8"></script>
+  <!--<link rel="stylesheet" href="css/Style.css">-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <title></title>
+</head>
+<body style="">
+  <style>
+    body {
+      margin: 0;
+      color: white;
+      background: rgb(15,25,27);
+      font-family: Sans-Serif;
+    }
+    header {
+      text-align: left;
+      color: white;
+      font-family: Sans-Serif;
+      background-color: black;
+      height: 2.5rem;
+      font-size: 1.5rem;
+
+    }
+    p {
+      color: white;
+      font-size: 1.2rem;
+      margin-left: 10px;
+
+    }
+    hr {
+      box-sizing: content-box;
+      height: 0;
+      overflow: hidden;
+      opacity: 0.4;
+    }
+    .margin {
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+    .icon-button {
+      border: none;
+      background-color: black;
+      color: white;
+    }
+    .float {
+      float: right;
+      margin-top: 5px;
+    }
+    .margin-left {
+      margin-left: 10px;
+    }
+    .center {
+      text-align: center;
+    }
+    .file-categories {
+      display: grid;
+      /*grid-template-columns:;*/
+    }
+    .file-group {
+      
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    #menu {
+      width: 0;
+      height: 100%;
+      position: fixed;
+      overflow-x: hidden;
+      top: 0;
+      left: 0;
+      background-color: black;
+    }
+   
+  </style>
+  <header>
+    <span class="fas fa-bars margin" onclick="Open();"></span>
+    <span class="margin-left">Files hub</span>
+    <button type="button" class="icon-button  float"><span class="fas fa-search fa-lg "></span>
+    </button>
+  </header>
+  <div id="menu">
+    <header>
+      Files hub
+    </header>
+    <div class="">
+      <span class="material-icons float" onclick="Close();">close</span>
+      <br />
+      <span class="Theme">Lighttheme</span>
+
+    </div>
+  </div>
+  <p>
+    <strong>Note:</strong>this is a static site it is just for fun. There are no files here.
+  </p>
+  <div class="file-categories">
+    <div class="file-group">
+
+      <span class="fas fa-upload fa-lg margin-left"></span>
+      <span>uploads</span>
+
+    </div>
+    <div class="file-group">
+
+      <span class="fas fa-download fa-lg margin-left"></span>
+      <span>Downloads</span>
+
+    </div>
+
+    <div class="file-group">
+
+      <span class="fas fa-file fa-lg margin-left"></span>
+      <span class="center">Documents</span>
+
+    </div>
+
+    <div class="file-group">
+
+      <span class="fas fa-video fa-lg margin-left"></span>
+      <span>Videos</span>
+
+    </div>
+    <div class="file-group">
+
+      <span class="fas fa-image fa-lg margin-left"></span>
+
+      <span>images</span>
+
+    </div>
+
+  </div>
+  <script>
+    function Open() {
+      var Width = document.getElementById('menu')
+      Width.style.width = '70%'
+
+    }
+    function Close() {
+      var Width = document.getElementById('menu')
+      Width.style.width = '0'
+    }
+    function Theme() {
+      
+      
+    }
+  </script>
+
+</body>
+</html>
